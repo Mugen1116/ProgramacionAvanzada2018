@@ -21,7 +21,7 @@ public class EcuacionLineal {
     }
 
     public float solve(){
-        x = (-b)/a;
+        return  (-b)/a;
     }
 
 

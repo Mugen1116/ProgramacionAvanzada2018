@@ -9,7 +9,7 @@ import org.junit.Test;
 public class EcuacionLinealTest {
 	@Test
 	public void terminoIndependienteCeroTest() {
-		EcuacionLineal ecuacionLineal = new EcuacionLineal(1, 0); // x + 0 = 0
+		EcuacionLineal ecuacionLineal = new EcuacionLineal(); // x + 0 = 0
         ecuacionLineal.setA(1f);
         ecuacionLineal.setB(0f);
 
@@ -18,10 +18,10 @@ public class EcuacionLinealTest {
 
 	@Test
 	public void distintosDeCeroTest() {
-		EcuacionLineal ecuacionLineal = new EcuacionLineal(1, 1); // x + 1 = 0
+		EcuacionLineal ecuacionLineal = new EcuacionLineal(); // x + 1 = 0
 		// A partir de aquí, el código que comprueba que la solución es correcta
 
-		ecuacionLineal = new EcuacionLineal(2, 1); // 2x + 1 = 0
+		ecuacionLineal = new EcuacionLineal(); // 2x + 1 = 0
 		// A partir de aquí, el código que comprueba que la solución es correcta
 	}
 }
